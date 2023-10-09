@@ -17,10 +17,10 @@ The technologies used in the prroject are:
 # furture plans
 In future this application is intended to improve to became more user interact and dynamic. The plan is to make it FinTech application where users registraion save money and at withdraw at any given time with withdrawal will be included. this will solve the problem of litle saving challenges fro litle earner. The plate will allow saving of any amount.
 # Cotatct iformation
-NAME: Adelah Paul Msen
-PHONE: +2348141188288
-MAIL: pauladelah1@gmail.com
-PORTFOLIO SITE: www.trendmindssolutions.com.ng
-FACEBOOK: https://web.facebook.com/paul.adelah.3
-FACEBOOK PAGE 1: https://web.facebook.com/profile.php?id=100064792843451&is_tour_dismissed=true
-FACEBOOK PAGE 2: https://web.facebook.com/AdelEcoTechEngineeringLTD/
+1. NAME: Adelah Paul Msen
+2. PHONE: +2348141188288
+3. MAIL: pauladelah1@gmail.com
+4. PORTFOLIO SITE: www.trendmindssolutions.com.ng
+5. FACEBOOK: https://web.facebook.com/paul.adelah.3
+6. FACEBOOK PAGE 1: https://web.facebook.com/profile.php?id=100064792843451&is_tour_dismissed=true
+7. FACEBOOK PAGE 2: https://web.facebook.com/AdelEcoTechEngineeringLTD/
