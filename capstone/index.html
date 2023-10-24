@@ -445,21 +445,20 @@
                               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                           </div>
+                          <p style="color:red"></p>
+                          <small style="color:green"></small>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea class="form-control" id="msessage" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
+                          
                           <div class="col-md-12 text-center">
                             <button type="submit" class="button button-a button-big button-rouded" onclick="validatate_form ()">Send Message</button>
                           </div>
                         </div>
                       </form>
+                     
                     </div>
                   </div>
                   <div class="col-md-6" id="abt-content">
@@ -519,6 +518,6 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
+  <script src="forms/formvalidate.js"></script>
     </body>
 </html>
