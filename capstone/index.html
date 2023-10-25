@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="style.css" rel="stylesheet">
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="forms/formvalidate.js"></script>
+        
     </head>
 
     <body>
@@ -428,33 +428,33 @@
 
                     </script>
                     <div class="contact-form">
-                      <form  id="form-msg" role="form" class="formval">
+                      <form  id="formMsg" role="form" method="get" class="formval">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
                             </div>
                           </div>
-                          <p style="color:red"></p>
-                          <small style="color:green"></small>
+                          <p style="color:red" id="error"></p>
+                          <small style="color:green" id="mailerror"></small>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" id="msessage" name="message" rows="5" placeholder="Message" required></textarea>
+                              <textarea class="form-control" id="msessage" name="message" rows="5" placeholder="Message" ></textarea>
                             </div>
                           </div>
                           
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded" onclick="validatate_form ()">Send Message</button>
+                            <button type="submit" >Send Message</button>
                           </div>
                         </div>
                       </form>
@@ -518,6 +518,6 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="forms/formvalidate.js"></script>
+ 
     </body>
 </html>
