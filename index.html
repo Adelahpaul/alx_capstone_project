@@ -3,8 +3,9 @@
     <meta charset="utf-8">
     <head>
         <title>Alx capstone</title>
+<link rel="stylesheet" href="style.css">
+        <script defer src="formvalidate.js"></script> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="style.css" rel="stylesheet">
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         
     </head>
@@ -71,6 +72,7 @@
       Aliquid ratione pariatur quam. Ea, autem. Officia adipisci corporis, necessitatibus 
       totam ad labore iusto laudantium a, sunt rem libero, possimus iure sint!</div>
       <h4 class="title-left">Our Mision</h4>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <div class="mision">To Provide IT ( software, Networking, etc) and electrical( solar, general electricals, etc) solution to the society</div>
     <h4 class="title-left">Our Vission</h4>
     <div class=" vission">To solve the Pressing needs of the society</div>  
@@ -409,7 +411,7 @@
     
     <!-- ======= Contact Section ======= -->
     <h2 class="contact-title">cotact us </h2>
-    <section id="contactus" class="reachus" style="background-image: url(img/overlay-bg.jpg)">
+    <section id="contactus" class="reachus">
      
       <div class="overlay-mf"></div> 
       <div class="container">
@@ -424,81 +426,62 @@
                         Send Message Us
                       </h5>
                     </div>
-                    <script >
-const nameEl = document.getElementById('name');
-const emailEl = document.getElementById('email');
-const subject = document.getElementById('subject');
-const textarea = document.getElementById('message');
-const form = document.getElementById('formMsg');
-const error = document.getElementById('error')
-const mailerr = document.getElementById('mailerror')
-
-form.addEventListener('submit', function (e) {
-    // prevent the form from submitting
-    let message= []
-    let succmsg = []
-    if (nameEl.value ==='' || nameEl.value == null ) {
-        message.push ('Name cannot be empty');
-    }
-    
-    if(emailEl.value ==='' || emailEl.value == null){
-    message.push('email cannot be empty')
-    } else if(emailEl.value.length <= 7 ){
-        succmsg.push('Email must be more than 7 charcters')
-    }else{
-        succmsg.push('')
-    }
-
-    if(subject.value ==='' || subject.value == null){
-        message.push('subject cannot be empty')
-        }
-
-        if(textarea.value ==='' || textarea.value == null){
-            message.push('Message cannot be empty')
-            }
-
-            if(message.length > 0 ){
-    e.preventDefault();
-error.innerText = message.join(' , ')
-mailerr.innerText = succmsg;
-            }
-});
- </script>
-                     <!-- <script defer src="forms/formvalidate.js"></script> 
-
-                    <div class="contact-form">
-                      <form  id="formMsg" role="form"  method="get" class="formval">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
-                            </div>
-                          </div>
-                          <p style="color:red" id="error"></p>
-                          <small style="color:green" id="mailerror"></small>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" id="msessage" name="message" rows="5" placeholder="Message" ></textarea>
-                            </div>
-                          </div>
-                          
-                          <div class="col-md-12 text-center">
-                            <button type="submit" >Send Message</button>
-                          </div>
-                        </div>
-                      </form>
+                   
+                     <!-- <script defer src="forms/formvalidate.js"></script> -->
+                     <div class="contact-form">
+                      <form id="formMsg"  action="" method="get" class="formval"> 
+                       <div class="row">
+                         <div class="col-md-12 mb-3">
+                           <div class="form-group">
+                                                     <!-- <label for="nane">Name:</label> -->
+                                                   
+                                                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" autocomplete="off">
+                                                   <p id="name-err" style="color: red;"></p>
+                                                 </div>
+                         </div>
+                       
+                         <div class="col-md-12 mb-3">
+                                                 <div class="form-group">
+                                                     <!-- <label for="email">Email:</label> -->
+                                                   <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" autocomplete="on" >
+                                                 <p id="mailerror" style="color: red;"></p>
+                                                 <p id="success"></p>
+                                                 </div>
+                         </div>
                      
-                    </div>
+                         <div class="col-md-12 mb-3">
+                                                 <div class="form-group">
+                                                     <!-- <label for="subject">Subject:</label> -->
+                                                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" autocomplete="off" >
+                                                   <p id="subeerr" style="color: red;"></p>
+                                                 </div>
+                         </div>
+                                              <!-- message prompt from javasript  -->
+                     
+                                               
+                                               <div class="col-md-12">
+                                                 <div class="form-group">
+                                                     <!-- <label for="message">Message:</label> -->
+                                                   <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" autocomplete="off" ></textarea>
+                                                   <p id="msgeerr" style="color: red;"></p>
+                                                 </div>
+                                               </div>
+                                               <p style="color:red" id="error"></p>
+                                               <small style="color:green" id="sucess"></small>
+                     
+                                                                         
+                                               <div class="col-md-12 text-center">
+                                                 <!-- <button type="submit" class="button button-a button-big button-rouded">Send Message</button> -->
+                                                  <input type="submit" value="Send Message" class="send">
+                                                </div> 
+                                               </div>
+                                              
+                                           </form> 
+                                           
+                                         </div>
+                     
+                     
+
                   </div>
                   <div class="col-md-6" id="abt-content">
                     <div class="title-box ">
@@ -511,7 +494,7 @@ mailerr.innerText = succmsg;
                     <b><a href="index.html">Trend Minds Solutions. </a></b>is a Subsidiary Of <b>AdelECOTECH LTD, Jos.</b> 
                       We are aimed at providing IT solution to the society. Armed with Experts in various aspect of Information Technology
                        on both Part-Time And Full Time with many years of working experience on diferent jobs.       
-
+<br><br><br>
                       </p>
                       <ul class="list-icon">
                         <li><span class="fa fa-map-marker"></span>  2c Tafawa Balewa Street, Jos (Zibeh Institute of Technology, Jos)</li>

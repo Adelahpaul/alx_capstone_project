@@ -502,12 +502,12 @@ box-shadow: #3393ff;
   margin-left: 15px;
 }
 #contactus .contact-form{
-  font-size: 38px;
+  font-size: 14px;
   text-align: left;
-  margin-top: 5px;
-  width: 400px;
-  height: 300px ;
-  }
+   margin-top: 5px; 
+   width: 400px;
+  height: 100px ; 
+  } 
   #contactus .container{
     background-color: transparent;
   }
@@ -530,6 +530,15 @@ box-shadow: #3393ff;
   margin-top: 15px;
   background-color: #f7f3f3;
 }
+#contactus .contact-form .formval .send{
+  font-size: 14px;
+  width: 280px;
+  border-radius: 5px;
+  border-width: 5px;
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: green;
+}
 #contactus #abt-content{
  width: 700px;
  margin-left: 600px;
@@ -540,10 +549,14 @@ box-shadow: #3393ff;
 #contactus .title-right{
   font-size: 30px;
   text-align: left;
-  margin-top: 5px;
+  margin-top: 210px;
   margin-bottom: 5px;
   margin-left: 5px;
 }
+#contactus.list-icon{
+margin-top: 200px;
+}
+
 
 #contactus .contact-mf{
   background-color:white;
